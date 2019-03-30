@@ -1,0 +1,25 @@
+<h1>Archives</h1>
+
+{% for p in posts %}
+
+{% if p.year.length %}
+<h2>{{ p.year }}</h2>
+{% /if %}
+
+<div class="article">
+  <a class="article__title">
+    {{ p.title }}
+  </a>
+  <ul class="article__metas">
+    <li class="article__meta">
+      {{ p.date }}
+    </li>
+    {% for cat in p.cats %}
+    <li class="article__meta">
+      <a href="{{ cat.url }}">{{ cat.name }}</a>
+    </li>
+    {% /for %}
+  </ul>
+</div>
+
+{% /for %}

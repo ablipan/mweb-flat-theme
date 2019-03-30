@@ -1,0 +1,32 @@
+<aside class="sidebar">
+  <div class="card">
+    <div class="card__header">
+      Categories
+    </div>
+    <div class="card__content">
+      <div class="tags">
+        {% for c in categoriesTree %}
+        <a href="{{ c.url }}" class="tag">{{ c.name }}</a>
+        {% /for %}
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card__header">
+      Recent posts
+    </div>
+    <div class="card__content">
+      <div class="article-list">
+        {% for p in recentPosts %}
+        {% if currentLoop.currentIndex < 5 %}
+        <a class="article article--recent" href="{{ p.url }}">
+          <div class="article__title">
+            {{ p.title }}
+          </div>
+        </a>
+        {% /if %}
+        {% /for %}
+      </div>
+    </div>
+  </div>
+</aside>
