@@ -1,4 +1,4 @@
-# MWeb juejin like theme
+# mweb-flat-theme
 A simple flat theme for Mweb.
 
 ## How to use
