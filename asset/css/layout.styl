@@ -1,0 +1,67 @@
+body
+  height 100vh
+  display flex
+  flex-direction column
+
+.app-container
+  margin 0 auto
+  width 100%
+  max-width 960px
+
+.app-main
+  flex-grow 1
+  display flex
+  align-items: flex-start
+  margin-top 20px
+
+.app-header
+  background #fff
+  color $header-color = #909090
+  z-index 250
+  flex-shrink 0
+
+  .app-container
+    display flex
+    align-items center
+
+  .logo
+    margin-right 24px
+
+    &__img
+      height 40px
+      width auto
+
+  .app-nav
+    flex 1
+    height $nav-height = 60px
+    line-height $nav-height
+
+    &__item
+      display inline-block
+
+      &--active .app-nav__link
+        //color $primary
+        color darken($header-color, 50%)
+        font-weight 600
+
+    &__link
+      display inline-block
+      padding 0 20px
+      font-size 16px
+
+.app-footer
+  padding 40px 0 20px
+  flex-shrink 0
+
+.copyright
+  color #909090
+  text-align center
+  font-size 13px
+
+  li
+    display inline-block
+    margin-right 10px
+
+.introduction
+  padding: 16px
+

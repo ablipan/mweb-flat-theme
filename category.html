@@ -11,18 +11,13 @@
         </li>
         {% for cat in p.cats %}
         <li class="article__meta">
-          <a href="{{ cat.url }}">{{ cat.name }}</a>
+          {{ cat.name }}
         </li>
         {% /for %}
       </ul>
       <p class="article__brief">
         {{ p.desContentTextOnly }}
       </p>
-      <ul class="article__toolbar">
-        {% if p.readMore.length %}
-        <a class="read-more-link" href="{{ p.url }}">Read More</a>
-        {% /if %}
-      </ul>
     </a>
     {% /for %}
   </div>

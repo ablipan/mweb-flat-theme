@@ -1,0 +1,47 @@
+.sidebar {
+  width: 240px;
+  margin-left: 20px;
+  flex-shrink: 0;
+}
+.card {
+  background-color: #fff;
+  border-radius: 2px;
+  margin-bottom: 20px;
+  box-shadow: $shadow;
+}
+.card__header {
+  height: 45px;
+  line-height: 45px;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-size: 14px;
+  border-bottom: 1px solid #f6f6f6;
+}
+.tags {
+  padding: 16px 16px 5px;
+}
+.tags .tag {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  margin-right: 12px;
+  margin-bottom: 12px;
+  background-color: #f3f6f3;
+  border-radius: 30px;
+  padding-left: 22px;
+  padding-right: 22px;
+  color: inherit;
+  border: 1px solid transparent;
+}
+.tags .tag:hover {
+  color: $primary;
+  border-color: $primary;
+}
+.social .social__item {
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+}
+.social .social__item svg {
+  fill: currentColor;
+}

@@ -1,25 +1,29 @@
-<h1>Archives</h1>
+<div class="article-list-wrap">
+  <div class="article-list">
+    {% for p in posts %}
 
-{% for p in posts %}
+    {% if p.year.length %}
+    <div class="article-divider">
+      <span class="article-divider-label">{{ p.year }}</span>
+    </div>
+    {% /if %}
 
-{% if p.year.length %}
-<h2>{{ p.year }}</h2>
-{% /if %}
+    <a class="article" href="{{ p.url }}">
+      <div class="article__title">
+        {{ p.title }}
+      </div>
+      <ul class="article__metas">
+        <li class="article__meta">
+          {{ p.date }}
+        </li>
+        {% for cat in p.cats %}
+        <li class="article__meta">
+          <div href="{{ cat.url }}">{{ cat.name }}</div>
+        </li>
+        {% /for %}
+      </ul>
+    </a>
 
-<div class="article">
-  <a class="article__title">
-    {{ p.title }}
-  </a>
-  <ul class="article__metas">
-    <li class="article__meta">
-      {{ p.date }}
-    </li>
-    {% for cat in p.cats %}
-    <li class="article__meta">
-      <a href="{{ cat.url }}">{{ cat.name }}</a>
-    </li>
     {% /for %}
-  </ul>
+  </div>
 </div>
-
-{% /for %}

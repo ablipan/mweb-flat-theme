@@ -10,5 +10,22 @@
 {{ mathJaxSupport }}
 {{ siteOther }}
 
+<script src="asset/js/clipboard.min.js"></script>
+<script src="asset/prism/prism.js"></script>
+<script src="asset/js/jquery-3.3.1.min.js"></script>
+<script src="asset/tocbot/tocbot.min.js"></script>
+<script>
+$(function () {
+  tocbot.init({
+    tocSelector: '.js-toc',
+    contentSelector: '.article-single-wrap',
+    headingSelector: 'h1, h2, h3',
+    positionFixedSelector: '.js-toc',
+    headingsOffset: 20,
+    // scrollSmooth: true,
+    // scrollSmoothOffset: 40,
+  });
+})
+</script>
 </body>
 </html>

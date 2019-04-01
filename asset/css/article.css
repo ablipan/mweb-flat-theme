@@ -1,0 +1,123 @@
+html {
+  font-size: 14px;
+  font-family: -apple-system, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Arial, sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  color: #333;
+  background-color: #f4f5f5;
+  line-height: 1.5;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #909090;
+}
+a:hover {
+  color: #007fff;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+}
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.app-container {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 960px;
+}
+.app-main {
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+.is-pulled-right {
+  float: right;
+}
+.article-list-wrap,
+.article-single-wrap {
+  flex: 1;
+}
+.article-list {
+  background: #fff;
+}
+.article {
+  display: block;
+  padding: 18px 24px;
+}
+.article:not(:last-child) {
+  border-bottom: 1px solid rgba(178,186,194,0.15);
+}
+.article:hover {
+  background: rgba(0,0,0,0.01);
+}
+.article--recent {
+  padding: 10px 16px;
+}
+.article--recent .article__title {
+  font-size: 14px;
+  font-weight: inherit;
+  display: block;
+}
+.article__title {
+  color: #2e3135;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.article__metas {
+  margin-top: 6px;
+  color: #b2bac2;
+}
+.article__meta {
+  display: inline-block;
+}
+.article__meta:not(:last-child):after {
+  content: "·";
+  color: #b2bac2;
+  margin: 0 5px;
+}
+.article__brief {
+  color: #5c5c5c;
+  margin: 10px 0;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.article__content {
+  margin: 10px 0;
+}
+.pager {
+  margin-top: 10px;
+}
+.pager:after {
+  clear: both;
+  content: " ";
+  display: table;
+}
+.pager svg {
+  vertical-align: text-bottom;
+}
+.pager__previous {
+  float: left;
+}
+.pager__next {
+  float: right;
+}

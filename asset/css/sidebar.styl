@@ -1,0 +1,58 @@
+// 侧边栏
+.sidebar
+  width 240px
+  margin-left 20px
+  flex-shrink 0
+
+// 右侧卡片
+.card
+  background-color: #ffffff
+  border-radius: 2px
+  margin-bottom: 20px
+  box-shadow: $shadow
+
+  &__header
+    height: 45px
+    line-height: 45px
+    padding-left: 16px
+    padding-right 16px
+    font-size 14px
+    border-bottom 1px solid $border-color
+
+//&__content
+
+// 右侧标签列表
+.tags
+  padding: 16px 16px 5px
+
+  .tag
+    display inline-block
+    height: 30px
+    line-height: 30px
+    margin-right: 12px
+    margin-bottom: 12px
+    background-color: #f3f6f3
+    border-radius: 30px
+    padding-left: 22px
+    padding-right: 22px
+    color inherit
+    border 1px solid transparent
+
+    &:hover
+      color: $primary
+      border-color $primary
+
+.slogan
+  padding 16px
+
+.social
+  .social__item
+    width $size= 28px
+    height $size
+    display inline-block
+
+    svg
+      fill: currentColor;
+
+.toc-link.is-active-link::before
+  background-color $primary

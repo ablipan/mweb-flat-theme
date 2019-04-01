@@ -1,0 +1,120 @@
+.article-single-wrap
+  .article
+    background #ffffff
+    border-bottom none
+
+    &__title
+      font-size 30px
+      font-weight 700
+      margin 20px 0
+
+    &__content
+      h1
+      h2
+      h3
+      h4
+      h5
+        outline none
+
+      h1
+        font-size: 30px
+        margin-bottom: 5px
+
+      h2
+        padding-bottom: 12px
+        font-size: 24px
+        border-bottom: 1px solid #ececec
+
+      h3
+        font-size: 18px
+        padding-bottom: 0
+
+      h4
+        font-size: 16px
+
+      h5
+        font-size: 15px
+
+      h6
+        margin-top: 5px
+
+      hr
+        border: none
+        border-top: 1px solid #dddddd
+
+      a
+        color: #0269c8;
+        border-bottom: 1px solid #d1e9ff
+
+        &:hover
+          color #275b8c
+
+      p
+        margin: 22px 0
+
+      ul
+      ol
+        padding-left: $offset = 28px
+
+        li
+          margin-bottom: 0
+          list-style: inherit
+
+          &.task-list-item
+            margin-left: - $offset
+            list-style: none
+
+      blockquote
+        color: #666
+        padding: 1px 23px
+        margin: 22px 0
+        border-left: 4px solid #cbcbcb
+        background-color: #f8f8f8
+
+      code
+        background-color: #fff5f5
+        color: #ff502c
+        padding: 1px 5px
+
+      pre
+        position: relative
+        line-height: 1.75
+        border-radius: 0
+
+        & > code
+          display: block
+          padding: 15px 12px
+          background-color: inherit
+          color: inherit
+
+      // 避免影响 prism 的 toolbar
+
+      .code-toolbar
+        .toolbar a
+        .toolbar button
+        .toolbar span
+          border-radius: 0
+          margin-left: 8px
+          border-bottom none
+
+      table
+        display: block;
+        width: 100%;
+        overflow: auto
+        border-spacing: 0
+        border-collapse: collapse
+
+        tr
+          background-color: #fff
+          border-top: 1px solid #c6cbd1
+
+          &:nth-child(2n)
+            background-color: #f6f8fa
+
+        td
+        th
+          padding: 6px 13px
+          border: 1px solid #dfe2e5
+
+        th
+          font-weight: 600

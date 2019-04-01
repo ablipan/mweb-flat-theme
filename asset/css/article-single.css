@@ -1,0 +1,31 @@
+.article-single-wrap .article {
+  background: #fff;
+  border-bottom: none;
+}
+.article-single-wrap .article__title {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 20px 0;
+}
+.article-single-wrap .article h1 {
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+.article-single-wrap .article h2 {
+  padding-bottom: 12px;
+  font-size: 24px;
+  border-bottom: 1px solid #ececec;
+}
+.article-single-wrap .article h3 {
+  font-size: 18px;
+  padding-bottom: 0;
+}
+.article-single-wrap .article h4 {
+  font-size: 16px;
+}
+.article-single-wrap .article h5 {
+  font-size: 15px;
+}
+.article-single-wrap .article h6 {
+  margin-top: 5px;
+}

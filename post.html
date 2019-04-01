@@ -1,5 +1,5 @@
 <div class="article-single-wrap">
-  <div class="article is-single">
+  <div class="article">
     <div class="article__title">
       {{ post.title }}
     </div>
@@ -13,9 +13,9 @@
       </li>
       {% /for %}
     </ul>
-    <p class="article__content">
+    <div class="article__content">
       {{ post.content }}
-    </p>
+    </div>
   </div>
 
   {{ commentAndShareCode }}
