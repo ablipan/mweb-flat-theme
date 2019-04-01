@@ -9,3 +9,7 @@ Clone this repo to your Mweb themes folder.
 cd ~/Library/Containers/com.coderforart.MWeb/Data/Documents/themes/SiteThemes
 git clone https://github.com/ablipan/mweb-flat-theme.git
 ```
+
+## TODO
+
+* [ ] mobile style support
